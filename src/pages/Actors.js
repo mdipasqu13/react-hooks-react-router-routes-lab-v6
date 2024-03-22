@@ -10,23 +10,23 @@ const Actors = () => {
       .then((data) => setActors(data));
   }, []);
   return (
-    <div>
+    <>
       <h1>
         <NavBar />
         Actors Page
       </h1>
       {actors.map((actor) => (
-        <article>
+        <article key={actor.id}>
           <h2>{actor.name}</h2>
           <ul>
             {actor.movies.map((movie) => (
-              <li>{movie}</li>
+              <li key={movie}>{movie}</li>
             ))}
           </ul>
         </article>
       ))}
 
-    </div>
+    </>
   );
 };
 

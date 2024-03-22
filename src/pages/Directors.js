@@ -17,11 +17,11 @@ const Directors = () => {
         Directors Page
       </h1>
       {directors.map((directors) => (
-        <article>
+        <article key= {directors.id}>
           <h2>{directors.name}</h2>
           <ul>
             {directors.movies.map((movie) => (
-              <li>{movie}</li>
+              <li key= {movie}>{movie}</li>
             ))}
           </ul>
         </article>
