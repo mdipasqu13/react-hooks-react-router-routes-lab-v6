@@ -6,21 +6,24 @@ function NavBar() {
     <nav className="navbar">
       <NavLink
         to="/"
+        className="nav-link"
       >
         Home
       </NavLink>
       <NavLink
         to="/directors"
+        className="nav-link"
       >
         Directors
       </NavLink>
       <NavLink
         to="/actors"
+        className="nav-link"
       >
         Actors
       </NavLink>
     </nav>
-    );
+  );
 };
 
 export default NavBar;
